@@ -12,7 +12,7 @@
     "darwin"
   ],
   "scripts": {
-    "start": "./node_modules/.bin/electron .",
+    "start": "LD_PRELOAD=node_modules/sharp/vendor/lib/libz.so electron .",
     "postinstall": "./node_modules/.bin/electron-rebuild"
   },
   "repository": {
@@ -40,20 +40,21 @@
   ],
   "preferGlobal": true,
   "devDependencies": {
-    "electron": "1.7.9",
-    "electron-compilers": "^5.9.0"
+    "popper.js": "^1.15.0",
+    "webpack": "^4.39.2"
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "bootstrap": "^4.0.0",
-    "electron-compile": "^6.4.2",
-    "electron-rebuild": "^1.7.3",
-    "express": "^4.16.3",
+    "bootstrap": "^4.3.1",
+    "electron": "^1.7.9",
+    "electron-compile": "^6.4.4",
+    "electron-compilers": "^5.9.0",
+    "electron-rebuild": "^1.8.5",
+    "express": "^4.17.1",
     "gphoto2": "^0.3.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.1",
-    "sharp": "^0.20.1",
+    "jquery": "^3.4.1",
+    "sharp": "^0.22.1",
     "socket.io": "^1.7.0"
   },
   "optionalDependencies": {

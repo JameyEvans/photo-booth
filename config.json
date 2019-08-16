@@ -3,9 +3,9 @@
 		"fullscreen": true,
 		"width": 1440,
 		"height": 900,
-		"showDevTools": false,
+		"showDevTools": true,
 		"useGPIO": false,
-		"grayscaleMode": true,
+		"grayscaleMode": false,
 		"preventScreensaver": true
 	},
 	"maxImageSize": "1500",
@@ -14,7 +14,7 @@
 	"photoPreviewDuration": "8",
 	"photoSeriesLength": "3",
 	"slideshow": {
-		"enabled": true,
+		"enabled": false,
 		"activatesAfterSeconds": "30",
 		"secondsPerPhoto": "8"
 	},
@@ -32,6 +32,7 @@
 		"maxDownloadImageSize": 800,
 		"enableRemoteRelease": true
 	},
+	
 	"branding": {
 		"type": "text",
 		"content": "<div style='font-size: 1.2em; padding-left: 25px;'><i class='fa fa-wifi' aria-hidden='true' style='font-size: 2.5em;'></i> <b style='font-size: 2em; padding-left: 15px;'>photo-booth</b><br /><p>Log into wifi, browse to <b style='padding: 0 5px;'>photo.app</b> and download your photos!</p></div>",

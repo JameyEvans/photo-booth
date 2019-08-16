@@ -18,12 +18,12 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-const electron = require('electron')
+const electron = require('electron');
 // Module to control application life.
 const app = electron.app
 
 // Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
+const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -68,7 +68,10 @@ function createWindow () {
     fullscreen: fullscreen,
     width: width,
     height: height,
-    backgroundColor: '#000000'
+    backgroundColor: '#000000',
+    webPreferences:{
+	nodeIntegration: true
+    }
   };
 
   console.log('window settings: '+JSON.stringify(windowSettings));
@@ -122,6 +125,7 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
+
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
